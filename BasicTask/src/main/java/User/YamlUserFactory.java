@@ -3,7 +3,10 @@ package User;
 import java.util.List;
 import DBService.DatabaseService;
 
-
+/**
+ * Конкретный класс фабрики пользователей.
+ * Создает пользователей с помощью чтения из Yaml файла
+ */
 public class YamlUserFactory extends UserFactory {
     private List<User> yamlUsers;
     private int yamlUserIndex = 0;
